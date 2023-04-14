@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Getway</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" type="image/png" href="./Assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- main container -->
+    <main class="main-container">
+        <!-- two section in main coantainer -->
+        <!-- left section -->
+        <section class="left-section">
+
+            <img class="bg-desktop" src="./Assets/bg-main-desktop.png" alt="">
+            <img class="bg-mobile" src="./Assets/bg-main-mobile.png" alt="">
+
+
+            <div class="media-query">
+                <div class="card-font-img">
+                    <img class="card-font-logo" src="./Assets/card-logo.svg" alt="">
+                    <img class="font-img" src="./Assets/bg-card-front.png" alt="">
+
+                    <p class="dummy-number">0000 0000 0000 0000</p>
+
+                    <div class="dummy-name-exp">
+                        <p class="dummy-name">Ritesh Sharma</p>
+                        <p class="dummy-exp">00/00</p>
+                    </div>
+                </div>
+
+                <div class="card-back-img">
+                    <img class="back-img" src="./Assets/bg-card-back.png" alt="">
+
+                    <p class="dummy-cvc">000</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right section -->
+        <section class="right-section">
+            <div class="card-details">
+                <div class="candidate-name">
+                    <label for="Name">Cardholder Name</label><br>
+                    <input class="name" type="text" required placeholder="e.g. Ritesh Sharma">
+                </div>
+
+                <div class="card-number">
+                    <label for="card-number">Card Number</label><br>
+                    <input class="number" type="text" required placeholder="e.g. 1234 5678 9123 0000">
+                </div>
+
+                <div class="exp-cvc">
+                    <div class="exp-date">
+                        <label for="exp-date">Exp. Date (MM/YY)</label><br>
+                        <input class="mm" type="text" placeholder="MM" required>
+                        <input class="yy" type="text" placeholder="YY" required>
+                    </div>
+
+                    <div class="cvc">
+                        <label for="cvc">CVC</label><br>
+                        <input class="cvc-back" type="text" placeholder="e.g. 123" required>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <input type="button" value="Confirm">
+                </div>
+            </div>
+
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="https://www.linkedin.com/in/ritesh-sharma-276b2325b/">Ritesh Sharma</a>.
+            </div>
+        </section>
+
+        <div class="thank-page-hidden">
+            <img src="./Assets/icon-complete.svg" alt="">
+            <h2 class="thank-you-header">
+                Thank you!
+            </h2>
+            <p>We've added your card details</p>
+            <div class="button">
+                <input type="button" value="Confirm">
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./javaScript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,506 @@
+:root {
+    --Linear-gradient-active-input-border: #6448fe, #600594;
+    --Red-input-errors: #ff5252;
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: #dedede;
+    --Dark-grayish-violet: #8e8593;
+    --Very-dark-violet: #21092f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    max-width: 90rem;
+    /* height: 100vh; */
+}
+
+.main-container {
+    /* display: grid;
+    grid-template-columns: 30% 70%; */
+    display: flex;
+    flex-direction: row;
+}
+
+.bg-mobile {
+    display: none;
+}
+
+/* .left-section {
+    background-image: url(../Assets/bg-main-desktop.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.card-font-logo {
+    scale: 0.8;
+}
+
+.card-font-img {
+    position: absolute;
+    left: 9rem;
+    top: 6rem;
+    z-index: 5;
+}
+
+.card-back-img {
+    position: absolute;
+    top: 23rem;
+    left: 13rem;
+    z-index: 1;
+}
+
+.font-img,
+.back-img {
+    width: 400px;
+}
+
+.right-section {
+    width: 100%;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-details {
+    position: relative;
+    top: 8rem;
+}
+
+.card-details label {
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    top: -0.3rem;
+}
+
+.card-details div {
+    margin-top: 1.5rem;
+}
+
+
+.candidate-name input {
+    width: 20rem;
+    font-size: 18px;
+    padding: 0.35rem;
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 8px;
+}
+
+.card-number input {
+    width: 100%;
+    font-size: 18px;
+    padding: 0.35rem;
+    border: 2px solid var(--Light-grayish-violet);
+    border-radius: 8px;
+
+}
+
+.exp-cvc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp-date input {
+    width: 4rem;
+    font-size: 18px;
+    padding: 0.35rem;
+    border: 2px solid var(--Light-grayish-violet);
+    border-radius: 8px;
+}
+
+.cvc input {
+    width: 6rem;
+    font-size: 18px;
+    padding: 0.35rem;
+    border: 2px solid var(--Light-grayish-violet);
+    border-radius: 8px;
+}
+
+.button input {
+    width: 20rem;
+    font-size: 18px;
+    padding: 0.5rem;
+    background-color: var(--Very-dark-violet);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--White);
+    font-weight: 500;
+}
+
+.card-font-logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 2;
+}
+
+.thank-page-hidden {
+    display: none;
+}
+
+.dummy-number {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 8rem;
+    left: 2rem;
+    color: var(--White);
+}
+
+.dummy-name-exp {
+    width: 81%;
+    position: absolute;
+    top: 11rem;
+    left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    color: var(--White);
+}
+
+.dummy-cvc {
+    position: absolute;
+    top: 6rem;
+    left: 19rem;
+    color: var(--White);
+    font-size: 18px;
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    top: 12rem;
+}
+
+.attribution a {
+    color: #3e52a3;
+}
+
+
+input:focus {
+    outline-color: #600594;
+
+}
+
+
+@media screen and (max-width: 1050px) and (min-width: 500px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg-desktop {
+        width: 250px;
+        height: 100vh;
+    }
+
+    .card-font-logo {
+        scale: 0.7;
+    }
+
+    .card-font-img {
+        position: absolute;
+        left: 2rem;
+        top: 5rem;
+        z-index: 5;
+    }
+
+    .card-back-img {
+        position: absolute;
+        top: 20rem;
+        left: 5rem;
+        z-index: 1;
+    }
+
+    .font-img,
+    .back-img {
+        width: 300px;
+    }
+
+    .card-font-logo {
+        position: absolute;
+        top: 1rem;
+        left: 0.5rem;
+    }
+
+
+    .dummy-number {
+        position: absolute;
+        font-size: 1.4rem;
+        top: 6.5rem;
+        left: 1rem;
+        color: var(--White);
+    }
+
+    .dummy-name-exp {
+        width: 87%;
+        position: absolute;
+        top: 8.5rem;
+        left: 1rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.1em;
+        color: var(--White);
+    }
+
+    .dummy-cvc {
+        position: absolute;
+        top: 4.5rem;
+        left: 14.5rem;
+        color: var(--White);
+        font-size: 18px;
+    }
+
+    .bg-mobile {
+        display: none;
+    }
+
+    .right-section {
+        width: 100%;
+        background-color: var(--White);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-details {
+        position: relative;
+        top: 8rem;
+        /* left: 2rem; */
+    }
+
+    .card-details label {
+        font-weight: 500;
+        text-transform: uppercase;
+        position: relative;
+        top: -0.3rem;
+    }
+
+    .card-details div {
+        margin-top: 1.5rem;
+    }
+
+    .card-details label {
+        font-weight: 500;
+        font-size: 15px;
+        text-transform: uppercase;
+        position: relative;
+        top: -0.3rem;
+    }
+
+    .candidate-name input {
+        width: 15rem;
+        font-size: 18px;
+        padding: 0.35rem;
+        border: 1px solid var(--Light-grayish-violet);
+        border-radius: 8px;
+    }
+
+    .card-number input {
+        width: 15rem;
+        font-size: 18px;
+        padding: 0.35rem;
+        border: 2px solid var(--Light-grayish-violet);
+        border-radius: 8px;
+
+    }
+
+    .exp-cvc {
+        width: 15rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .exp-date input {
+        width: 3rem;
+        font-size: 18px;
+        padding: 0.35rem;
+        border: 2px solid var(--Light-grayish-violet);
+        border-radius: 8px;
+    }
+
+    .cvc input {
+        width: 5rem;
+        font-size: 18px;
+        padding: 0.35rem;
+        border: 2px solid var(--Light-grayish-violet);
+        border-radius: 8px;
+    }
+
+    .button input {
+        width: 15rem;
+        font-size: 18px;
+        padding: 0.5rem;
+        background-color: var(--Very-dark-violet);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        color: var(--White);
+        font-weight: 500;
+    }
+
+
+}
+
+@media screen and (max-width: 500px){
+
+    .bg-desktop{
+        display: none;
+    }
+
+    .bg-mobile{
+        display: block;
+        width: 500px;
+        height: 250px;
+    }
+
+    .right-section{
+        position: absolute;
+        top: 19rem;
+    }
+
+    .card-details{
+        position: absolute;
+    }
+
+    .card-font-logo {
+        scale: 0.7;
+    }
+
+    .card-font-img {
+        position: absolute;
+        left: 1rem;
+        top: 11rem;
+        z-index: 5;
+    }
+
+    .card-back-img {
+        position: absolute;
+        top: 4rem;
+        left:3rem;
+        z-index: 1;
+    }
+
+    .font-img,
+    .back-img {
+        width: 350px;
+    }
+
+    .card-font-logo {
+        position: absolute;
+        top: 1rem;
+        left: 0.5rem;
+    }
+
+
+    .dummy-number {
+        position: absolute;
+        font-size: 1.5rem;
+        top: 7rem;
+        left: 1rem;
+        color: var(--White);
+    }
+
+    .dummy-name-exp {
+        width: 87%;
+        position: absolute;
+        top: 9.5rem;
+        left: 1rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.1em;
+        color: var(--White);
+    }
+
+    .dummy-cvc {
+        position: absolute;
+        top: 5.2rem;
+        left: 17rem;
+        color: var(--White);
+        font-size: 18px;
+    }
+
+    .card-details label {
+        font-weight: 500;
+        text-transform: uppercase;
+        position: relative;
+        top: -0.3rem;
+    }
+
+    .card-details div {
+        margin-top: 1.5rem;
+    }
+
+    .card-details label {
+        font-weight: 500;
+        font-size: 15px;
+        text-transform: uppercase;
+        position: relative;
+        top: -0.3rem;
+    }
+
+    .candidate-name input {
+        width: 20rem;
+        font-size: 18px;
+        padding: 0.35rem;
+        border: 1px solid var(--Light-grayish-violet);
+        border-radius: 8px;
+    }
+
+    .card-number input {
+        width: 20rem;
+        font-size: 18px;
+        padding: 0.35rem;
+        border: 2px solid var(--Light-grayish-violet);
+        border-radius: 8px;
+
+    }
+
+    .exp-cvc {
+        width: 20rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .exp-date input {
+        width: 3rem;
+        font-size: 18px;
+        padding: 0.35rem;
+        border: 2px solid var(--Light-grayish-violet);
+        border-radius: 8px;
+    }
+
+    .cvc input {
+        width: 5rem;
+        font-size: 18px;
+        padding: 0.35rem;
+        border: 2px solid var(--Light-grayish-violet);
+        border-radius: 8px;
+    }
+
+    .button input {
+        width: 20rem;
+        font-size: 18px;
+        padding: 0.5rem;
+        background-color: var(--Very-dark-violet);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        color: var(--White);
+        font-weight: 500;
+    }
+
+    .attribution{
+        display: none;
+    }
+
+}
